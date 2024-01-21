@@ -13,7 +13,7 @@ function Employee(name, age, jobTitle) {
 	}
 }
 Employee.prototype = Object.create(Person.prototype);
-// Employee.prototype.constructor = Employee;
+Employee.prototype.constructor = Employee;
 
 Employee.prototype.jobGreet = function (){
 	cosole.log(`hello, my name is ${this.name}, i am ${this.age} years old, and my job title is ${this.jobTitle}`)
